@@ -1,0 +1,5 @@
+require('plugins.lsp')
+require('plugins.mason')
+require('plugins.plugins')
+require('plugins.lualine')
+require('plugins.cmp')
