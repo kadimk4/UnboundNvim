@@ -1,3 +1,7 @@
+конфигурация моего nvim
+на данный момент установка ручная
+после настройки основного функционала будет установлен lazy
+
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
