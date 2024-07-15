@@ -12,6 +12,8 @@ opt.number = true
 opt.expandtab = true
 opt.tabstop = 4
 opt.shiftwidth = 4
+vim.cmd "set noshowcmd"
+vim.cmd "set noshowmode"
 
 local lsp_installer = require("nvim-lsp-installer")
 lsp_installer.on_server_ready(function(server)
@@ -43,4 +45,21 @@ end)
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 vim.o.completeopt = 'menuone,noselect'
+vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
+vim.g.netrw_browse_split = 3
+
+vim.opt.termguicolors = true
+require("netrw").setup({
+  -- File icons to use when `use_devicons` is false or if
+  -- no icon is found for the given file type.
+  icons = {
+    symlink = '',
+    directory = '',
+    file = '',
+  },
+  -- Uses mini.icon or nvim-web-devicons if true, otherwise use the file icon specified above
+  use_devicons = true
+  })
+
 

@@ -35,5 +35,15 @@ return require('packer').startup(function(use)
 	    end
 	}
 
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+  use {'nvim-tree/nvim-web-devicons'}
+  use {'tamton-aquib/staline.nvim'}
+
+  use {'prichrd/netrw.nvim'}
+  use {'numirias/semshi'}
 end)
+
 
