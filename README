@@ -2,13 +2,12 @@
 на данный момент установка ручная
 после настройки основного функционала будет установлен lazy
 
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-
  sudo pacman -S ruff-lsp
 
  start from plugins.lua
+
  :so
  :PackerSync
+ :LspInstall
 
  ready
