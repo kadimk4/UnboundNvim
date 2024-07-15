@@ -10,4 +10,22 @@
  :PackerSync
  :LspInstall
 
+# KeyBindings
+
+## netrw
+
+> R - rename selected file
+
+> D - delete selected file
+
+> d - new directory
+
+> t - open new in buffer
+
+## telescope+fzf+rgrep
+
+> ,ff - find file
+
+> ,fg - find contex 
+
  ready
